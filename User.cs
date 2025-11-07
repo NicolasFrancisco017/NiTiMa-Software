@@ -2,6 +2,7 @@ public class User {
     private string? NomeUsuario;
     private string? NomeCompleto;
     private string? Senha;
+    private string? Preferencia;
 
     public User(string nomeUsuario, string nomeCompleto, string senha) {
         this.NomeUsuario = nomeUsuario;
@@ -9,16 +10,33 @@ public class User {
         this.Senha = senha;
     }
 
-    public bool atualizarDados(string nomeUsuario, string nomeCompleto, string senha) {
-        try {
+    public bool atualizarDados(string nomeUsuario, string nomeCompleto, string senha)
+    {
+        try
+        {
             this.NomeUsuario = nomeUsuario;
             this.NomeCompleto = nomeCompleto;
             this.Senha = senha;
             return true;
-        } catch(Exception e) {
+        }
+        catch (Exception e)
+        {
             Console.WriteLine("Mensagem de erro: " + e);
             return false;
         }
+    }
+    
+    public bool definirPreferencia(string preferencia)
+    {
+        try
+        {
+            this.Preferencia = preferencia;
+        } catch(Exception e)
+        {
+            Console.WriteLine("Erro: " + e);
+            return false;
+        }
+        return true;
     }
 
     public bool excluirUsuario()
@@ -51,5 +69,19 @@ public class User {
         return user;
     }
 
+    public string getNome()
+    {
+        return this.NomeCompleto;
+    }
+
+    public string getUserName()
+    {
+        return this.NomeUsuario;
+    }
+    
+    public string getPreferencia()
+    {
+        return this.Preferencia;
+    }
 
 }

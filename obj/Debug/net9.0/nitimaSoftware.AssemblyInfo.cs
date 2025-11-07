@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nitimaSoftware")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5dfef7202808c0cada2d6926a57fe31fdca0c8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c179cde30ae625437de98755db353d400fab95c")]
 [assembly: System.Reflection.AssemblyProductAttribute("nitimaSoftware")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nitimaSoftware")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
