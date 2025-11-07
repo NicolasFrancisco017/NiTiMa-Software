@@ -3,7 +3,7 @@ public class User {
     private string? NomeCompleto;
     private string? Senha;
     private string? Preferencia;
-
+    private Recomendacao Recomendacoes = new Recomendacao();
     public User(string nomeUsuario, string nomeCompleto, string senha) {
         this.NomeUsuario = nomeUsuario;
         this.NomeCompleto = nomeCompleto;
